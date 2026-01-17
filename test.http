@@ -1,0 +1,41 @@
+###
+POST http://localhost:8080/api/urls
+Content-Type: application/json
+
+{
+    "key": 7,
+    "value": "dog"
+}
+
+###
+POST http://localhost:8080/api/urls
+Content-Type: application/json
+
+{
+  "key": 8,
+  "value": "bird"
+}
+
+
+###
+GET http://localhost:8080/api/urls/7
+Accept: application/json
+
+
+###
+PUT http://localhost:8080/api/urls/7
+Content-Type: application/json
+
+{
+  "value": "cat"
+}
+
+
+###
+DELETE http://localhost:8080/api/urls/7
+
+
+###
+GET http://localhost:8080/api/urls
+Accept: application/json
+
